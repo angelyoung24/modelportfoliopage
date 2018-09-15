@@ -13,7 +13,7 @@ body {
 }
 
 .container .column {
-    width: 25%;
+    width: 20%;
     height:100%;
     float: left;
     border-right: 2px solid rgba(0,0,0,.5);
@@ -37,7 +37,7 @@ body {
     transform: translateY(-50%);
     width: 100%;
     background: rgba(0,0,0,.1);
-     text-align: center;
+    text-align: center;
     margin: 0;
     padding: 0;
     color: rgb(255,255,255,.2);
@@ -51,8 +51,8 @@ body {
     top: 50%;
     transform: translateY(100%);
     box-sizing: border-box;
-    padding:40px;
-    background: rgba(255,255,255,1);
+    padding: 90px;
+    background: wheat;
     text-align: center;
     transition: 0.5s;
     opacity: 0;
@@ -67,14 +67,15 @@ body {
 .container .column .content .box h2 {
     margin:0;
     padding:0;
-    font-size: 30px;
+    font-size: 20px;
+    text-align: justify;
     color: #262626;
 }
 
-.container .column .content .box p {
+/* .container .column .content .box p {
     color: #262626;
     font-size: 16px;
-}
+} */
 
 .container .column .bg {
     position: absolute;
@@ -118,3 +119,12 @@ body {
     background-position: center;
     transition: 0.5s;
 }
+
+.container .column.active .bg.bg5 {
+    background: url(bg5.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+}
+
