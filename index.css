@@ -64,6 +64,21 @@ body {
     transform: translateY(-50%);
 }
 
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: wheat;
+    background-color: wheat;
+}
+
+
+
 .container .column .content .box h2 {
     margin:0;
     padding:0;
