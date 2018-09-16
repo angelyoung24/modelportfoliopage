@@ -64,6 +64,7 @@ body {
     transform: translateY(-50%);
 }
 
+
 a:link {
     text-decoration: none;
 }
@@ -141,5 +142,80 @@ a:hover {
     background-attachment: fixed;
     background-position: center;
     transition: 0.5s;
+}
+
+.box .front {
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+
+}
+
+.box:hover .front {
+transform: rotateX(-180deg);
+}
+
+,box .front h2 {
+    display: inline-block;
+    width: 15px;
+    height:15px;
+    text-align:center;
+    color: #262626;
+    text-decoration: none;
+    border-radius: 50%;
+    transition:  0.5s;
+}
+
+.box .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+
+
+}
+
+.box .back:before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:-50%;
+    width: 100%;
+    height: 100%;
+}
+
+.box:hover .back {
+    transform: rotateX(0deg);
+}
+
+
+.social-icons {
+    padding: 80px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 15px;
+    height:15px;
+    text-align:center;
+    color: #262626;
+    text-decoration: none;
+    border-radius: 50%;
+    transition:  0.5s;
+}
+
+.social-icons a .fa{
+    line-height: 36px;
+}
+
+.social-icons a:hover .fa {
+    background: peachpuff;
 }
 
