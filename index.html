@@ -6,14 +6,17 @@
     <title>S H A N A</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="index.js"></script>
 </head>
 
 <body>
     </div>
     <div class="container">
-        
+
         <div class="column active">
             <div class="content">
                 <h1>S</h1>
@@ -29,7 +32,8 @@
                 <div class="content">
                     <h1>H</h1>
                     <div class="box">
-                        <h2>G A L L E R Y</h2>
+                        <a href="gallery/index.html"><h2>G A L L E R Y</h2></a>
+                        
                     </div>
                 </div>
                 <div class="bg bg2"></div>
@@ -71,8 +75,8 @@
                         <div class="bg bg5"></div>
                     </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
+    
     <script type="text/javascript">
     $(document).on('mouseover', '.container .column', function(){
             $(this).addClass('active').siblings().removeClass('active')
