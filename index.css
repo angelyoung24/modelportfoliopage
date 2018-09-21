@@ -158,7 +158,7 @@ a:hover {
 transform: rotateX(-180deg);
 }
 
-,box .front h2 {
+.box .front h2 {
     display: inline-block;
     width: 15px;
     height:15px;
@@ -219,3 +219,33 @@ transform: rotateX(-180deg);
     background: peachpuff;
 }
 
+
+ /* @media (min-width: 786px) {
+   .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+}
+
+@media (min-width: 786px) and (max-width: 991px) {
+    .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+     .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+     .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}  */
