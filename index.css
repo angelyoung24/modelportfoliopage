@@ -6,6 +6,7 @@ body {
 
 }
 
+
 .container {
     width: 100%;
     height: 100vh;
@@ -14,10 +15,10 @@ body {
 
 .container .column {
     width: 20%;
-    height:100%;
+    height: 100%;
     float: left;
     border-right: 2px solid rgba(0,0,0,.5);
-    box-sizing:border-box;
+    box-sizing: border-box;
     z-index: 1;
 }
 
@@ -28,6 +29,22 @@ body {
 .container .column .content {
     position: relative;
     height: 100%;
+
+}
+
+
+
+.container .column .content .box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(100%);
+    box-sizing: border-box;
+    padding: 80px;
+    margin: 20px;
+    background: wheat;
+    text-align: center;
+    transition: 0.4s;
+    opacity: 0;
 
 }
 
@@ -44,19 +61,6 @@ body {
     font-size: 15em;
     border-top: 2px solid rgba(0,0,0,.5);
     border-bottom: 2px solid rgba(0,0,0,.5);
-}
-
-.container .column .content .box {
-    position: absolute;
-    top: 50%;
-    transform: translateY(100%);
-    box-sizing: border-box;
-    padding: 90px;
-    background: wheat;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-
 }
 
 .container .column.active .content .box {
@@ -88,10 +92,11 @@ a:hover {
     color: #262626;
 }
 
-/* .container .column .content .box p {
+.container .column .content .box p {
     color: #262626;
     font-size: 16px;
-} */
+}
+
 
 .container .column .bg {
     position: absolute;
@@ -155,7 +160,7 @@ a:hover {
 }
 
 .box:hover .front {
-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
 }
 
 .box .front h2 {
@@ -220,32 +225,3 @@ transform: rotateX(-180deg);
 }
 
 
- /* @media (min-width: 786px) {
-   .container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-}
-
-@media (min-width: 786px) and (max-width: 991px) {
-    .container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-     .container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-@media (min-width: 1200px) {
-     .container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}  */
