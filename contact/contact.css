@@ -5,7 +5,8 @@ body {
     padding: 0;
     font-family: 'Mali',
     cursive;
-    background:#000;
+    background: url('bg5.jpeg');
+    background-size: cover;
 }
 
 .container {
