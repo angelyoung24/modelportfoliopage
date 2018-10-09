@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mali',
+    cursive;
+    background:#000;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    margin: 100px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 300px;
+
+}
+
+.container .card {
+    position: relative;
+    background: wheat;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container .card:hover {
+    transform: translateY(-20px)
+}
+
+.container .card .img-box {
+    position: absolute;
+    top: 0;
+    left:0; 
+    width: 100%;
+    height:100%;
+    background-size: cover;
+    transition: 0.5s;
+}
+
+.container .card:hover .img-box {
+    opacity: .5;
+
+}
+
+.container .card .img-box img {
+    width: 100%;
+
+}
+
+.container .card .content {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    bottom: -100%;
+    padding: 20px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    bottom: 0;
+
+}
+
+.container .card:nth-child(1) .content {
+    background: linear-gradient(0deg, pink, transparent);
+}
+
+.container .card .content h5 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: darkred;
+    font-size: 20px;
+}
+
+.container .card .content h5 span {
+    font-size: 16px;
+}
+
+.container .card .content ul {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .card .content ul li {
+    list-style: none;
+}
+
+.container .card .content ul li a {
+    color: darkred;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: 0.5s;
+}
